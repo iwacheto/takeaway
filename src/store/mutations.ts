@@ -7,7 +7,7 @@ const mutations = {
 
     CREATE_PROJECT(state: any, project: IProject) {
         const prevProjects = [...state.projects]
-        prevProjects.push(project);
+        prevProjects.unshift(project);
         state.projects = prevProjects;
     },
 
